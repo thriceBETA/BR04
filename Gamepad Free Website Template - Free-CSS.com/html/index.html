@@ -204,7 +204,7 @@
           <div class="email_box">
                     <div class="input_main">
                        <div class="container">
-                          <form action="/action_page.php">
+                          <!--<form action="/action_page.php">
                             <div class="form-group">
                               <input type="text" class="email-bt" placeholder="Name" name="Name">
                             </div>
@@ -217,9 +217,22 @@
                             <div class="form-group">
                                 <textarea class="massage-bt" placeholder="Massage" rows="5" id="comment" name="Massage"></textarea>
                             </div>
-                          </form>   
+                          </form>-->
+                          <form>
+                            <div class="form-group">
+                              <input type="text" class="email-bt" placeholder="Name" name="Name" required>
+                            </div>
+                              
+                              <input type="email" placeholder="Email" class="email-bt" id="email" name="email" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}" required>
+                              
+                              <br>
+                              <div class="form-group">
+                                <textarea class="massage-bt" placeholder="Message" rows="5" id="comment" name="Massage" required></textarea>
+                            </div><br>
+                              <input type="submit" class="subscribr_bt" value="Submit">
+                           </form>   
                        </div> 
-                        <div class="main_bt"><a href="#">SEND</a></div>                  
+                                          
                     </div>
                  </div>
         </div>
@@ -250,7 +263,7 @@
             <button class="subscribr_bt" onclick="return validateEmail()">SUBSCRIBE</button>
           </div>
           <div class="col-sm-6 col-md-6 col-lg-3">
-            <h2 class="account_text"><a href="#">To the Top</a></h2>
+            <h2 class="account_text"><a href="#">Take ME to the TOP</a></h2>
             
           </div>
         </div>
