@@ -74,7 +74,7 @@
           <div class="email_box">
                     <div class="input_main">
                        <div class="container">
-                          <form method="post">
+                         <!-- <form method="post">
                             <div class="form-group">
                               <input type="text" class="email-bt" placeholder="Name" name="Name">
                             </div>
@@ -86,14 +86,29 @@
                             <div class="form-group">
                                 <textarea class="massage-bt" placeholder="Message" rows="5" id="comment" name="Massage"></textarea>
                             </div>
-                          </form>   
+                          </form> -->
+                          
+                           <form>
+                            <div class="form-group">
+                              <input type="text" class="email-bt" placeholder="Name" name="Name" required>
+                            </div>
+                              
+                              <input type="email" placeholder="Email" class="email-bt" id="email" name="email" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}" required>
+                              
+                              <br>
+                              <div class="form-group">
+                                <textarea class="massage-bt" placeholder="Message" rows="5" id="comment" name="Massage" required></textarea>
+                            </div><br>
+                              <input type="submit" class="subscribr_bt" value="Submit">
+                           </form>
+                           
                        </div> 
                         
-                        <button class="subscribr_bt" onclick="return validateEmail()">SUBSCRIBE</button>                  
+                                         
                     </div>
                  </div>
         </div>
-        <script>
+        <!--<script>
           function validateEmail() {
              let email = document.getElementsByName("Enter Your Email")[0].value;
              let regex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
@@ -106,7 +121,7 @@
                return false;
              }
           }
-         </script>
+         </script>-->
         <div class="col-md-6">
           <div class="image_6"><img src="images/img-6.png"></div>
         </div>
@@ -131,11 +146,11 @@
                 </div>
           <div class="col-sm-6 col-md-6 col-lg-3">
             <h2 class="account_text">Newsletter</h2>
-            <input type="" class="email_text" placeholder="Enter Your Email" name="Enter Your Email">
-            <button class="subscribr_bt" onclick="return validateEmail()">SUBSCRIBE</button>
+            <input type="" class="email_text" placeholder="Enter Your Email" name="Enter Your Email" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}" required>
+            <input type="submit" class="subscribr_bt" value="SUBSCRIBE">
           </div>
           <div class="col-sm-6 col-md-6 col-lg-3">
-            <h2 class="account_text"><a href="#">To the Top</a></h2>
+            <h2 class="account_text"><a href="#">Take ME to the TOP</a></h2>
             
           </div>
         </div>
